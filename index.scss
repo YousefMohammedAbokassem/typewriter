@@ -1,0 +1,42 @@
+body {
+  background: black;
+}
+span.typed-text {
+  font-weight: normal;
+  font-weight: 700;
+  color: #fff;
+}
+span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.left {
+  color: white;
+}
+span.cursor.typing {
+  animation: none;
+}
+
+@keyframes blink {
+  0%,
+  49%,
+  100% {
+    background-color: #ccc;
+  }
+  //   49% {
+  //     background-color: #ccc;
+  //   }
+  50%,
+  99% {
+    background-color: transparent;
+  }
+  //   99% {
+  //     background-color: transparent;
+  //   }
+  //   100% {
+  //     background-color: #ccc;
+  //   }
+}
